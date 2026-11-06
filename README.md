@@ -1,19 +1,41 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+# Leads Tracker
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+Leads Tracker is a small browser extension for saving and keeping track of useful leads and websites. Add a lead by entering text or save the URL of the active browser tab. Your leads are stored in the browser, so they remain available when you reopen the app.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could go further with one of our advanced courses 🚀
+## Features
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+- Save a lead from the text field with **Save Input**.
+- Save the active tab's URL with **Save Tab**.
+- See the total number of saved leads and up to five leads in the list.
+- Clear the saved leads with **Delete All Leads**.
+- Start with sample leads on first use; deleting them leaves the list empty.
 
-Happy Coding!
+## Run locally
+
+You need [Node.js](https://nodejs.org/) and npm installed.
+
+1. Open a terminal in the project directory.
+2. Install dependencies:
+
+   ```sh
+   npm install
+   ```
+
+3. Start the Vite development server:
+
+   ```sh
+   npm run dev
+   ```
+
+4. Open the local URL printed by Vite in your browser.
+
+When running as a regular web page, **Save Tab** saves the page currently open in the app. To save the URL of another active tab, load the project as an extension instead.
+
+## Load as a Chrome extension
+
+1. Open `chrome://extensions` in Chrome and enable **Developer mode**.
+2. Select **Load unpacked**.
+3. Choose this project's folder (the folder containing `manifest.json`).
+4. Open the Leads Tracker extension from the toolbar.
+
+The extension needs the `tabs` permission to read the active tab's URL. Saved leads use the browser's local storage and are specific to the browser profile.
