@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leads Tracker</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <div class="popup-panel">
+        <div class="save-form">
+          <div class="brand-logo" aria-label="Lead tracker logo">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M15 18.5h18a2.5 2.5 0 0 1 2.5 2.5v13.5c0 1.38-1.12 2.5-2.5 2.5H21.5L15 39V21A2.5 2.5 0 0 1 17.5 18.5zm5 7.5h9v2h-9zm0 5h12v2H20zm0-10h12v2H20z" fill="currentColor"/>
+              <path d="M18 9h12v2H18zm0 4h12v2H18z" fill="currentColor" opacity="0.7"/>
+            </svg>
+          </div>
+
+          <h1 class="save-title">Save <span>Lead</span></h1>
+
+          <div class="input-wrap">
+            <input id="input-el" type="text" placeholder="Save the Lead" aria-label="Save lead input" />
+          </div>
+
+          <div class="action-row">
+            <button id="tab-btn" class="primary-btn" type="button">Save Tab</button>
+            <button id="input-btn" class="primary-btn" type="button">Save Input</button>
+          </div>
+        </div>
+
+        <div class="leads-section">
+          <div class="leads-header">
+            <p class="lead-summary">Total Leads (<span id="lead-count">0</span>)</p>
+            <button id="delete-btn" class="delete-action" type="button">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 8h10l-.8 10.4A2.2 2.2 0 0 1 14 20H10a2.2 2.2 0 0 1-2.2-1.6L7 8zm3-2.5V5a1.5 1.5 0 0 1 1.5-1.5h2A1.5 1.5 0 0 1 15 5v.5h3.5v1.5H5V5.5h3.5zM10 10v7h1.5v-7H10zm3 0v7h1.5v-7H13z" fill="currentColor"/>
+              </svg>
+              Delete All Leads
+            </button>
+          </div>
+
+          <ul id="ul-el" aria-live="polite"></ul>
+        </div>
+
+        <p class="credit">Developed With <span class="heart">❤</span> By Azhar Shah <span class="challenge">Scrimba Challenge</span></p>
+      </div>
+    </div>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
